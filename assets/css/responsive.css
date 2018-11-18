@@ -1,0 +1,38 @@
+
+@media screen and (max-width:959px){
+    nav ul{        
+        margin-right:24px;
+    }
+    .wrapper{
+        width:100%;
+        margin:0 auto;
+        min-width: 470px;
+    }
+}
+
+@media screen and (max-width:470px){
+    .wrapper{width:100%;
+        min-width: 100%;
+    }
+    nav{
+        border:none;
+    }
+    nav ul{float:none;background: #fff; border-bottom:1px solid black; margin-right:0px;}
+    nav li{margin:0px 6px;}
+    nav h1{width:100%;}
+    ul li{
+        width:32%;
+        margin:0px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:375px){
+    .maincontent img{
+        display:block;
+        text-align: center;
+        float:none !important;
+        padding:0px 0px 12px calc((100% - 200px) / 2) !important;
+       
+    }
+}

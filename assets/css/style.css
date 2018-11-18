@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size:15px;
+    color:#777;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+h1{font-family:'Georgia', Times, Times New Roman, serif; font-size:22px; font-weight: bold;}
+ol, ul {
+	list-style: none;
+}
+p{line-height: 24px;}
+p+p{margin:30px 0px;}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{background-image:linear-gradient(
+    rgba(92,125,123, 0.2),rgba(92,125,123, 0.2)
+  ),url(../images/topography.png); }
+
+nav{
+    position: fixed;
+    width:100%;
+    top:0px;
+    height:80px;
+    border-bottom:2px solid #ccc;
+    background: #fff;
+    z-index: 999;
+}
+nav h1{
+    background:#4aaaa5;
+    line-height: 80px;
+    display: inline-block;
+    padding:0px 35px;
+    color:white;
+}
+nav ul{
+    float: right;
+    padding:0px;
+    margin:0px;
+}
+nav li{
+    display: inline-block;
+    padding: 15px 6px;
+    margin: 17.5px 6px;
+    cursor: pointer;
+}
+nav li:last-child{margin-right:0px; padding-right:0px;}
+nav a:link, nav a:visited{color:#777}
+nav a{text-decoration: none;}
+nav li:hover, nav li:hover a{
+    color:#5c7d7b;
+    text-decoration: underline;
+}
+footer{
+    background: #666;
+    border-top: 2px solid #4aaaa5;
+    height:60px;
+    position: fixed;
+    bottom: 0px;
+    width:100%;
+    color:white;
+    text-align: center;
+    padding:32px 0px 8px 0px;
+}
+.wrapper{
+    width:960px;
+    margin:0 auto;
+}
+.maincontent{
+    margin-top:120px;
+    background-color:#fff;
+    border: 1px solid #ddd;
+    padding:0 30px;
+    margin-bottom:90px;
+}
+.maincontent h1{
+    color:#4aaaa5;
+    border-bottom:2px #ddd solid;
+    margin-bottom:30px;
+    padding:35px 0;
+}
+.maincontent p img{
+    float:left;
+    padding:8px 24px 12px 0px;
+}
+.maincontent p:first-child{margin-top:0px;}
+
+form{padding-bottom:30px;}
+form input, form textarea{
+    width:100%;
+    border:rgb(92,125,123) 1px solid;
+    margin:6px 0px;
+    padding:8px;
+}
+form input[type="submit"]{
+    padding:6px;
+    background: #4aaaa5;
+    display: inline;
+    color:white;
+    width:auto;
+    margin-top:12px;
+}
